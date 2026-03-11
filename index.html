@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="XRhssacIlXKk64ZNKko3Lwu_42aov6AraELZOAeqb" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>DDR-33 Construction | Patios, Decks, Renovations & Construction in Woodland Park, Colorado</title>
   <meta name="description" content="DDR-33 Construction provides patios, decks, renovations, commercial and residential construction services in Woodland Park, Divide, Colorado Springs, Pueblo, and surrounding Colorado areas. 38+ years of trusted craftsmanship." />
 
@@ -20,7 +21,7 @@
 
     body {
       font-family: Arial, sans-serif;
-      color: #1f1f1f;
+      color: #1a1a1a;
       background: #f6f3ed;
       line-height: 1.6;
     }
@@ -37,12 +38,12 @@
 
     .container {
       width: 92%;
-      max-width: 1200px;
+      max-width: 1220px;
       margin: 0 auto;
     }
 
     .topbar {
-      background: #111111;
+      background: #0f0f10;
       color: #ffffff;
       text-align: center;
       padding: 10px 16px;
@@ -51,7 +52,7 @@
     }
 
     .topbar a {
-      color: #f6d38b;
+      color: #f0c46b;
       font-weight: 700;
     }
 
@@ -62,7 +63,7 @@
       background: rgba(255,255,255,0.96);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(0,0,0,0.08);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.06);
     }
 
     .nav-inner {
@@ -79,22 +80,22 @@
       gap: 12px;
       font-size: 1.35rem;
       font-weight: 800;
-      color: #151515;
-      letter-spacing: 0.4px;
+      color: #121212;
+      letter-spacing: 0.3px;
     }
 
     .logo img {
-      width: 52px;
-      height: 52px;
+      width: 58px;
+      height: 58px;
       object-fit: contain;
-      border-radius: 12px;
-      padding: 6px;
-      background: #ffffff;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+      border-radius: 14px;
+      background: #fff;
+      padding: 4px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.10);
     }
 
     .logo span {
-      color: #c27a22;
+      color: #b8791f;
     }
 
     .nav-links {
@@ -106,20 +107,20 @@
 
     .nav-links a {
       font-weight: 700;
-      color: #2d2d2d;
+      color: #2a2a2a;
       transition: 0.25s ease;
     }
 
     .nav-links a:hover {
-      color: #c27a22;
+      color: #b8791f;
     }
 
     .nav-cta {
-      background: linear-gradient(135deg, #e0b14b 0%, #c27a22 100%);
+      background: linear-gradient(135deg, #e1b24f 0%, #b8791f 100%);
       color: #fff !important;
       padding: 11px 18px;
       border-radius: 999px;
-      box-shadow: 0 10px 24px rgba(194,122,34,0.24);
+      box-shadow: 0 10px 24px rgba(184,121,31,0.25);
     }
 
     .nav-cta:hover {
@@ -128,14 +129,14 @@
 
     .hero {
       position: relative;
-      min-height: 92vh;
+      min-height: 96vh;
       display: flex;
       align-items: center;
-      background:
-        linear-gradient(rgba(17,17,17,0.60), rgba(17,17,17,0.70)),
-        url('IMG_4571.jpeg') center/cover no-repeat;
-      color: #ffffff;
       overflow: hidden;
+      background:
+        linear-gradient(rgba(12,12,12,0.52), rgba(12,12,12,0.72)),
+        url('IMG_4571.jpeg') center/cover no-repeat;
+      color: #fff;
     }
 
     .hero::before {
@@ -143,8 +144,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at top right, rgba(224,177,75,0.22), transparent 28%),
-        radial-gradient(circle at bottom left, rgba(194,122,34,0.18), transparent 24%);
+        radial-gradient(circle at top right, rgba(225,178,79,0.22), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(184,121,31,0.18), transparent 24%);
       pointer-events: none;
     }
 
@@ -152,54 +153,65 @@
       position: relative;
       z-index: 2;
       width: 100%;
-      padding: 90px 0 110px;
+      padding: 88px 0 120px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 34px;
+      align-items: center;
     }
 
     .hero-content {
-      max-width: 760px;
-      background: rgba(0,0,0,0.28);
-      border: 1px solid rgba(255,255,255,0.16);
-      border-radius: 28px;
-      padding: 36px 32px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.22);
+      background: rgba(8,8,8,0.34);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 30px;
+      padding: 38px 34px;
+      box-shadow: 0 22px 50px rgba(0,0,0,0.24);
       backdrop-filter: blur(6px);
     }
 
-    .logo-badge {
-      width: 125px;
-      height: 125px;
-      margin: 0 auto 24px auto;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #e0b14b 0%, #c27a22 100%);
+    .hero-logo-wrap {
       display: flex;
-      align-items: center;
       justify-content: center;
-      box-shadow: 0 14px 35px rgba(0,0,0,0.30);
-      border: 4px solid rgba(255,255,255,0.18);
+      align-items: center;
     }
 
-    .logo-badge img {
-      width: 74px;
-      height: 74px;
+    .hero-logo-card {
+      width: 100%;
+      max-width: 380px;
+      background: rgba(12,12,12,0.36);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 28px;
+      padding: 26px;
+      box-shadow: 0 22px 50px rgba(0,0,0,0.24);
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-logo-card img {
+      width: 100%;
+      max-width: 290px;
+      margin: 0 auto;
       object-fit: contain;
-      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.25));
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,0.28));
     }
 
     .hero-badge {
       display: inline-block;
       background: rgba(255,255,255,0.10);
-      border: 1px solid rgba(255,255,255,0.25);
-      color: #f6d38b;
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #f0c46b;
       padding: 9px 16px;
       border-radius: 999px;
       font-size: 0.95rem;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 18px;
     }
 
     .hero h1 {
-      font-size: 3.35rem;
-      line-height: 1.05;
+      font-size: 3.5rem;
+      line-height: 1.03;
       margin-bottom: 16px;
       letter-spacing: -0.8px;
     }
@@ -207,15 +219,15 @@
     .subtitle {
       font-size: 1.18rem;
       font-weight: 700;
-      color: #f2dfb4;
+      color: #f5ddb0;
       margin-bottom: 12px;
       max-width: 650px;
     }
 
     .tagline {
-      color: #f5f1ea;
+      color: #f7f3ed;
       max-width: 650px;
-      font-size: 1.04rem;
+      font-size: 1.05rem;
       margin-bottom: 28px;
     }
 
@@ -235,7 +247,7 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #e0b14b 0%, #c27a22 100%);
+      background: linear-gradient(135deg, #e1b24f 0%, #b8791f 100%);
       color: #fff;
       box-shadow: 0 12px 24px rgba(0,0,0,0.18);
     }
@@ -245,9 +257,9 @@
     }
 
     .btn-secondary {
-      background: rgba(255,255,255,0.94);
-      color: #1f1f1f;
-      border: 1px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.95);
+      color: #1a1a1a;
+      border: 1px solid rgba(255,255,255,0.42);
     }
 
     .btn-secondary:hover {
@@ -258,7 +270,7 @@
     .trust-strip {
       position: relative;
       z-index: 5;
-      margin-top: -46px;
+      margin-top: -48px;
     }
 
     .trust-grid {
@@ -277,19 +289,19 @@
     }
 
     .trust-item h3 {
-      color: #c27a22;
+      color: #b8791f;
       font-size: 1.7rem;
       margin-bottom: 6px;
     }
 
     .trust-item p {
-      color: #5c554b;
+      color: #5d554b;
       font-weight: 700;
       font-size: 0.96rem;
     }
 
     section {
-      padding: 84px 0;
+      padding: 86px 0;
     }
 
     .section-heading {
@@ -299,7 +311,7 @@
 
     .section-heading .eyebrow {
       display: inline-block;
-      color: #c27a22;
+      color: #b8791f;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 0.9rem;
@@ -308,7 +320,7 @@
     }
 
     .section-heading h2 {
-      font-size: 2.35rem;
+      font-size: 2.4rem;
       margin-bottom: 14px;
       color: #181818;
     }
@@ -321,7 +333,7 @@
     }
 
     .why-section {
-      background: linear-gradient(to bottom, #f6f3ed 0%, #f0eadf 100%);
+      background: linear-gradient(to bottom, #f6f3ed 0%, #efe8db 100%);
     }
 
     .stats {
@@ -336,14 +348,14 @@
       padding: 28px 24px;
       text-align: center;
       box-shadow: 0 10px 26px rgba(0,0,0,0.07);
-      border-top: 4px solid #c27a22;
+      border-top: 4px solid #b8791f;
     }
 
     .stat-number {
       display: block;
       font-size: 2.2rem;
       font-weight: 800;
-      color: #c27a22;
+      color: #b8791f;
       margin-bottom: 8px;
     }
 
@@ -371,7 +383,7 @@
     }
 
     .services-section {
-      background: #fffcf6;
+      background: #fffdf8;
     }
 
     .cards-3 {
@@ -383,7 +395,7 @@
     .service-card {
       background: #ffffff;
       border-radius: 20px;
-      padding: 28px;
+      padding: 30px 28px;
       box-shadow: 0 10px 26px rgba(0,0,0,0.07);
       transition: 0.25s ease;
       border-bottom: 4px solid transparent;
@@ -391,7 +403,7 @@
 
     .service-card:hover {
       transform: translateY(-5px);
-      border-bottom-color: #c27a22;
+      border-bottom-color: #b8791f;
     }
 
     .service-card h3 {
@@ -406,7 +418,7 @@
 
     .service-area {
       background: #fff2d6;
-      border-left: 5px solid #c27a22;
+      border-left: 5px solid #b8791f;
       padding: 18px 20px;
       border-radius: 12px;
       margin-top: 28px;
@@ -415,7 +427,7 @@
     }
 
     .projects-section {
-      background: #151515;
+      background: #131313;
       color: #fff;
     }
 
@@ -423,6 +435,47 @@
     .projects-section .section-text,
     .projects-section .eyebrow {
       color: #ffffff;
+    }
+
+    .featured-project {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+      background: #ffffff;
+      color: #1a1a1a;
+      border-radius: 24px;
+      padding: 26px;
+      margin-bottom: 30px;
+      box-shadow: 0 14px 32px rgba(0,0,0,0.16);
+    }
+
+    .featured-project img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .featured-project h3 {
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+      color: #191919;
+    }
+
+    .featured-project p {
+      color: #5c554b;
+      margin-bottom: 16px;
+    }
+
+    .project-points {
+      list-style: none;
+    }
+
+    .project-points li {
+      margin-bottom: 10px;
+      color: #403a33;
+      font-weight: 700;
     }
 
     .gallery {
@@ -443,25 +496,6 @@
 
     .gallery img:hover {
       transform: scale(1.02);
-    }
-
-    .highlight-project {
-      background: #ffffff;
-      color: #1f1f1f;
-      border-radius: 24px;
-      padding: 28px;
-      margin-bottom: 30px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.14);
-    }
-
-    .highlight-project h3 {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
-      color: #1a1a1a;
-    }
-
-    .highlight-project p {
-      color: #5b544a;
     }
 
     .testimonials {
@@ -499,7 +533,7 @@
     }
 
     .cta-box {
-      background: linear-gradient(135deg, #e0b14b 0%, #c27a22 100%);
+      background: linear-gradient(135deg, #e1b24f 0%, #b8791f 100%);
       color: #1f1f1f;
       border-radius: 24px;
       padding: 38px 28px;
@@ -539,7 +573,7 @@
     }
 
     footer {
-      background: #111111;
+      background: #0f0f10;
       color: #ffffff;
       text-align: center;
       padding: 28px 20px;
@@ -550,18 +584,18 @@
     }
 
     @media (max-width: 992px) {
-      .nav-inner,
+      .hero-grid,
       .about-wrap,
       .cards-3,
       .stats,
       .gallery,
       .testimonials,
-      .trust-grid {
+      .trust-grid,
+      .featured-project {
         grid-template-columns: 1fr;
       }
 
       .nav-inner {
-        display: flex;
         flex-direction: column;
       }
 
@@ -570,11 +604,16 @@
       }
 
       .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
       }
 
-      .hero-content {
+      .hero-content,
+      .hero-logo-card {
         padding: 28px 24px;
+      }
+
+      .hero-logo-card img {
+        max-width: 240px;
       }
     }
 
@@ -588,7 +627,7 @@
       }
 
       .hero-wrap {
-        padding: 72px 0 94px;
+        padding: 72px 0 96px;
       }
 
       .hero h1 {
@@ -608,18 +647,14 @@
         font-size: 1.85rem;
       }
 
-      .gallery img {
+      .gallery img,
+      .featured-project img {
         height: 235px;
       }
 
-      .logo-badge {
-        width: 110px;
-        height: 110px;
-      }
-
-      .logo-badge img {
-        width: 66px;
-        height: 66px;
+      .logo img {
+        width: 50px;
+        height: 50px;
       }
     }
   </style>
@@ -634,7 +669,7 @@
   <div class="navbar">
     <div class="container nav-inner">
       <div class="logo">
-        <img src="worker-logo.png" alt="DDR-33 Construction logo">
+        <img src="ddr-logo-1.png" alt="DDR-33 Construction logo">
         <div>DDR-33 <span>Construction</span></div>
       </div>
 
@@ -650,27 +685,31 @@
 
   <header class="hero">
     <div class="container hero-wrap">
-      <div class="hero-content">
+      <div class="hero-grid">
 
-        <div class="logo-badge">
-          <img src="worker-logo.png" alt="DDR-33 Construction worker logo">
+        <div class="hero-content">
+          <div class="hero-badge">38+ Years of Trusted Craftsmanship</div>
+
+          <h1>Professional Construction, Patios & Renovations Built to Last</h1>
+
+          <div class="subtitle">
+            Commercial & Residential Construction in Woodland Park, Divide, Colorado Springs, Pueblo, and Surrounding Colorado Areas
+          </div>
+
+          <div class="tagline">
+            DDR-33 Construction delivers dependable workmanship, quality materials, and beautiful finished results for patios, decks, renovations, and residential construction projects.
+          </div>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="tel:17194925212">Call for a Quote</a>
+            <a class="btn btn-secondary" href="mailto:ddrconstruction33@gmail.com">Email Us</a>
+          </div>
         </div>
 
-        <div class="hero-badge">38+ Years of Trusted Craftsmanship</div>
-
-        <h1>Professional Construction, Patios & Renovations Built to Last</h1>
-
-        <div class="subtitle">
-          Commercial & Residential Construction in Woodland Park, Divide, Colorado Springs, Pueblo, and Surrounding Colorado Areas
-        </div>
-
-        <div class="tagline">
-          DDR-33 Construction delivers dependable workmanship, quality materials, and beautiful finished results for patios, decks, renovations, and residential construction projects.
-        </div>
-
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="tel:17194925212">Call for a Quote</a>
-          <a class="btn btn-secondary" href="mailto:ddrconstruction33@gmail.com">Email Us</a>
+        <div class="hero-logo-wrap">
+          <div class="hero-logo-card">
+            <img src="ddr-logo-1.png" alt="DDR-33 Construction logo badge">
+          </div>
         </div>
 
       </div>
@@ -802,11 +841,20 @@
         </p>
       </div>
 
-      <div class="highlight-project">
-        <h3>Featured Patio & Exterior Work</h3>
-        <p>
-          Real project photos help customers instantly see the craftsmanship, quality, and finished detail DDR-33 Construction brings to every job.
-        </p>
+      <div class="featured-project">
+        <img src="IMG_4571.jpeg" alt="Featured patio and exterior project by DDR-33 Construction">
+        <div>
+          <h3>Featured Patio & Exterior Project</h3>
+          <p>
+            Real project photos help customers instantly see the craftsmanship, finished detail, and quality materials DDR-33 Construction brings to every job.
+          </p>
+          <ul class="project-points">
+            <li>✔ Durable outdoor construction built to last</li>
+            <li>✔ Strong curb appeal and polished finishes</li>
+            <li>✔ Experienced workmanship with attention to detail</li>
+            <li>✔ Reliable service from start to finish</li>
+          </ul>
+        </div>
       </div>
 
       <div class="gallery">
