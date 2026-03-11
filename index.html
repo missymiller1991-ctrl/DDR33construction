@@ -4,31 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="XRhssacIlXKk64ZNKko3Lwu_42aov6AraELZOAeqb" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DDR-33 Construction | Patios, Renovations & Residential Construction in Woodland Park Colorado</title>
-  <meta name="description" content="DDR-33 Construction provides patios, decks, renovations, and residential construction services in Woodland Park, Divide, Colorado Springs and Pueblo Colorado. 38+ years experience." />
+  <title>DDR-33 Construction | Patios, Renovations & Residential Construction in Woodland Park, Colorado</title>
+  <meta name="description" content="DDR-33 Construction provides patios, decks, renovations, and residential construction services in Woodland Park, Divide, Colorado Springs, and Pueblo, Colorado. Over 38 years of experience." />
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      color: #222;
-      background: #f6f1df;
+      color: #1f1f1f;
+      background: #f8f5ee;
       line-height: 1.6;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1180px;
+      margin: 0 auto;
     }
 
     .topbar {
-      background: #2b2b2b;
+      background: #1d1d1d;
       color: #fff;
       text-align: center;
-      padding: 10px 16px;
+      padding: 12px 16px;
       font-size: 15px;
     }
 
@@ -37,114 +53,272 @@
       font-weight: bold;
     }
 
-    header {
-      background: linear-gradient(135deg, #d7c84f 0%, #e2a23e 55%, #c7792d 100%);
-      padding: 70px 20px 60px;
-      text-align: center;
+    .navbar {
+      background: #ffffff;
+      border-bottom: 1px solid #e8dfcf;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
       color: #1f1f1f;
+      letter-spacing: 0.4px;
     }
 
-    .hero-box {
-      max-width: 950px;
-      margin: 0 auto;
-      background: rgba(255,255,255,0.16);
-      border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 18px;
-      padding: 40px 24px;
+    .logo span {
+      color: #b56d24;
     }
 
-    h1 {
-      font-size: 2.8rem;
-      margin: 0 0 10px;
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-weight: 700;
+      color: #333;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: #b56d24;
+    }
+
+    .nav-cta {
+      background: #b56d24;
+      color: #fff !important;
+      padding: 11px 18px;
+      border-radius: 999px;
+    }
+
+    .nav-cta:hover {
+      background: #8f5419;
+    }
+
+    header.hero {
+      position: relative;
+      min-height: 86vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(26, 23, 18, 0.68), rgba(26, 23, 18, 0.68)),
+        url('banner.jpeg') center/cover no-repeat;
+      color: #fff;
+      padding: 80px 20px;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.28);
+      color: #f4dfb3;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero-content h1 {
+      font-size: 3.3rem;
+      line-height: 1.1;
+      margin-bottom: 16px;
     }
 
     .subtitle {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: bold;
-      margin-bottom: 10px;
+      color: #f6e7c3;
+      margin-bottom: 12px;
     }
 
     .tagline {
-      font-size: 1.1rem;
+      font-size: 1.08rem;
+      max-width: 690px;
       margin-bottom: 28px;
+      color: #f4efe7;
     }
 
     .hero-buttons {
       display: flex;
-      justify-content: center;
       gap: 14px;
       flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 22px;
-      border-radius: 10px;
+      padding: 14px 24px;
+      border-radius: 12px;
       font-weight: bold;
       font-size: 16px;
+      transition: 0.25s ease;
     }
 
     .btn-dark {
-      background: #222;
+      background: #b56d24;
       color: #fff;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    }
+
+    .btn-dark:hover {
+      background: #8f5419;
+      transform: translateY(-2px);
     }
 
     .btn-light {
+      background: rgba(255,255,255,0.92);
+      color: #1f1f1f;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .btn-light:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .intro-bar {
+      margin-top: -42px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
       background: #fff;
-      color: #222;
-      border: 1px solid #ddd;
+      border-radius: 20px;
+      box-shadow: 0 16px 35px rgba(0,0,0,0.08);
+      padding: 28px;
+    }
+
+    .intro-item {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .intro-item h3 {
+      color: #b56d24;
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+
+    .intro-item p {
+      color: #5c5348;
+      font-weight: 600;
     }
 
     section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 20px;
+      padding: 80px 0;
     }
 
-    h2 {
+    .section-heading {
       text-align: center;
-      font-size: 2rem;
-      margin: 0 0 18px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading .eyebrow {
+      color: #b56d24;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .section-heading h2 {
+      font-size: 2.3rem;
+      margin-bottom: 14px;
+      color: #1f1f1f;
     }
 
     .section-text {
-      max-width: 850px;
-      margin: 0 auto 30px;
-      text-align: center;
+      max-width: 860px;
+      margin: 0 auto;
+      color: #5f584f;
+      font-size: 1.04rem;
     }
 
-    .cards-3,
     .stats,
+    .cards-3,
     .testimonials,
     .gallery {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
+    }
+
+    .stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .card,
     .stat,
     .testimonial,
-    .contact-box {
+    .contact-box,
+    .feature-box {
       background: #fff;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.07);
     }
 
     .card h3,
-    .stat h3 {
-      margin-top: 0;
+    .stat h3,
+    .feature-box h3 {
+      margin-bottom: 12px;
+      color: #1f1f1f;
+    }
+
+    .card p,
+    .feature-box p,
+    .testimonial p {
+      color: #5f584f;
+    }
+
+    .why-section {
+      background: linear-gradient(to bottom, #f8f5ee 0%, #f3ecdf 100%);
     }
 
     .stat {
       text-align: center;
+      border-top: 4px solid #b56d24;
     }
 
     .stat-number {
       display: block;
-      font-size: 2rem;
-      font-weight: bold;
+      font-size: 2.2rem;
+      font-weight: 800;
       margin-bottom: 8px;
       color: #b56d24;
     }
@@ -152,65 +326,161 @@
     .about-wrap {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 22px;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .services-section {
+      background: #fffdf8;
+    }
+
+    .service-area {
+      background: #fff3dc;
+      border-left: 5px solid #b56d24;
+      padding: 18px 20px;
+      border-radius: 12px;
+      margin-top: 28px;
+      color: #4e463d;
+      font-weight: 600;
+    }
+
+    .projects-section {
+      background: #1e1c1a;
+      color: #fff;
+    }
+
+    .projects-section .section-heading h2,
+    .projects-section .section-text,
+    .projects-section .eyebrow {
+      color: #fff;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+      transition: 0.25s ease;
+      background: #d7d7d7;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    .testimonial {
+      position: relative;
     }
 
     .testimonial-name {
       font-weight: bold;
-      margin-top: 14px;
+      margin-top: 16px;
+      color: #1f1f1f;
     }
 
-    .service-area {
-      background: #fff8e8;
-      border-left: 5px solid #c7792d;
-      padding: 18px 20px;
-      border-radius: 10px;
-      margin-top: 24px;
+    .testimonial-location {
+      color: #7a6e60;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    .cta-strip {
+      background: linear-gradient(135deg, #d7c84f 0%, #e2a23e 55%, #c7792d 100%);
+      color: #1f1f1f;
+      border-radius: 22px;
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .cta-strip h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .cta-strip p {
+      max-width: 760px;
+      margin: 0 auto 20px;
+      font-weight: 600;
+    }
+
+    .contact-section {
+      background: #f8f5ee;
     }
 
     .contact-box {
-      max-width: 800px;
+      max-width: 860px;
       margin: 0 auto;
       text-align: center;
     }
 
     .contact-box p {
-      margin: 10px 0;
+      margin: 12px 0;
       font-size: 17px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      background: #ddd;
+      color: #4e463d;
     }
 
     footer {
-      background: #2b2b2b;
+      background: #1d1d1d;
       color: #fff;
       text-align: center;
-      padding: 26px 20px;
-      margin-top: 30px;
+      padding: 28px 20px;
+      margin-top: 0;
     }
 
-    @media (max-width: 900px) {
-      .cards-3,
+    footer p {
+      font-size: 0.98rem;
+    }
+
+    @media (max-width: 992px) {
       .stats,
+      .cards-3,
       .testimonials,
       .gallery,
+      .intro-grid,
       .about-wrap {
         grid-template-columns: 1fr;
       }
 
-      h1 {
-        font-size: 2.1rem;
+      .hero-content h1 {
+        font-size: 2.5rem;
       }
 
-      header {
-        padding: 50px 16px;
+      .nav-inner {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header.hero {
+        min-height: auto;
+        padding: 70px 16px;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1.08rem;
+      }
+
+      .tagline {
+        font-size: 1rem;
+      }
+
+      .section-heading h2,
+      .cta-strip h2 {
+        font-size: 1.8rem;
+      }
+
+      .gallery img {
+        height: 235px;
       }
     }
   </style>
@@ -222,137 +492,225 @@
     Email: <a href="mailto:ddrconstruction33@gmail.com">ddrconstruction33@gmail.com</a>
   </div>
 
-  <header>
-    <div class="hero-box">
-      <h1>DDR-33 Construction</h1>
-      <div class="subtitle">Commercial & Residential Construction</div>
-      <div class="tagline">Let’s make your vision come to life.</div>
-      <div class="hero-buttons">
-        <a class="btn btn-dark" href="tel:17194925212">Call for a Quote</a>
-        <a class="btn btn-light" href="mailto:ddrconstruction33@gmail.com">Email Us</a>
+  <div class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">DDR-33 <span>Construction</span></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="nav-cta">Free Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">38+ Years of Trusted Craftsmanship</div>
+        <h1>Professional Construction, Patios & Renovations Built to Last</h1>
+        <div class="subtitle">Commercial & Residential Construction in Woodland Park and Surrounding Colorado Areas</div>
+        <div class="tagline">
+          DDR-33 Construction delivers dependable workmanship, quality materials, and beautiful finished results for patios, renovations, decks, and residential construction projects.
+        </div>
+        <div class="hero-buttons">
+          <a class="btn btn-dark" href="tel:17194925212">Call for a Quote</a>
+          <a class="btn btn-light" href="mailto:ddrconstruction33@gmail.com">Email Us</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <section>
-    <h2>Why Homeowners Choose DDR-33 Construction</h2>
-    <p class="section-text">
-      With 38+ years in operation, DDR-33 Construction provides dependable craftsmanship,
-      renovations, patios, and residential construction services in Woodland Park,
-      Divide, Colorado Springs, Pueblo, and surrounding areas.
-    </p>
-
-    <div class="stats">
-      <div class="stat">
-        <span class="stat-number">100%</span>
-        Projects Completed
+  <div class="container intro-bar">
+    <div class="intro-grid">
+      <div class="intro-item">
+        <h3>38+</h3>
+        <p>Years of Construction Experience</p>
       </div>
-      <div class="stat">
-        <span class="stat-number">38+</span>
-        Years in Operation
+      <div class="intro-item">
+        <h3>Local</h3>
+        <p>Owned & Operated in Colorado</p>
       </div>
-      <div class="stat">
-        <span class="stat-number">Local</span>
-        Owned & Operated
+      <div class="intro-item">
+        <h3>Quality</h3>
+        <p>Workmanship You Can Trust</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <h2>About Us</h2>
-    <div class="about-wrap">
-      <div class="card">
-        <h3>Our Mission</h3>
-        <p>
-          Our mission is to enhance homes with expert craftsmanship, high-quality upgrades,
-          and innovative designs. We are committed to delivering exceptional home improvements,
-          additions, patios, and decks with attention to detail, reliability, and customer satisfaction.
+  <section class="why-section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2>Why Homeowners Choose DDR-33 Construction</h2>
+        <p class="section-text">
+          With more than 38 years in operation, DDR-33 Construction provides dependable craftsmanship, renovations, patios, and residential construction services in Woodland Park, Divide, Colorado Springs, Pueblo, and surrounding areas.
         </p>
       </div>
-      <div class="card">
-        <h3>Our Vision</h3>
-        <p>
-          Our vision is to be a trusted construction company known for excellence, innovation,
-          and quality work. We aim to build lasting relationships with clients by delivering
-          beautiful, functional spaces on time and with integrity.
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">38+</span>
+          Years in Operation
+        </div>
+        <div class="stat">
+          <span class="stat-number">Local</span>
+          Colorado Owned & Operated
+        </div>
+        <div class="stat">
+          <span class="stat-number">Trusted</span>
+          Reliable, Skilled Craftsmanship
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">About DDR-33</span>
+        <h2>Built on Integrity, Experience & Quality Work</h2>
+      </div>
+
+      <div class="about-wrap">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>
+            Our mission is to enhance homes with expert craftsmanship, high-quality upgrades, and innovative designs. We are committed to delivering exceptional home improvements, additions, patios, and decks with attention to detail, reliability, and customer satisfaction.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p>
+            Our vision is to be a trusted construction company known for excellence, innovation, and quality work. We aim to build lasting relationships with clients by delivering beautiful, functional spaces on time and with integrity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Our Services</span>
+        <h2>Construction Services Designed to Add Value</h2>
+        <p class="section-text">
+          Whether you need a patio, a renovation, or full residential construction support, we bring experience, workmanship, and care to every project.
         </p>
       </div>
-    </div>
-  </section>
 
-  <section>
-    <h2>Our Services</h2>
-    <p class="section-text">
-      Whether you need a patio, a renovation, or full residential construction support,
-      we bring experience, workmanship, and care to every project.
-    </p>
+      <div class="cards-3">
+        <div class="card">
+          <h3>Commercial Construction</h3>
+          <p>
+            Reliable construction services completed with quality workmanship, careful planning, and attention to detail from start to finish.
+          </p>
+        </div>
 
-    <div class="cards-3">
-      <div class="card">
-        <h3>Commercial Construction</h3>
-        <p>Reliable construction services with quality workmanship and attention to detail.</p>
-      </div>
-      <div class="card">
-        <h3>Patios</h3>
-        <p>Outdoor spaces designed for comfort, durability, function, and curb appeal.</p>
-      </div>
-      <div class="card">
-        <h3>Renovations & Upgrades</h3>
-        <p>Transforming homes with practical improvements, modern finishes, and lasting value.</p>
-      </div>
-    </div>
+        <div class="card">
+          <h3>Patios, Decks & Outdoor Spaces</h3>
+          <p>
+            Outdoor spaces built for comfort, durability, function, and curb appeal so your property looks better and works better.
+          </p>
+        </div>
 
-    <div class="service-area">
-      <strong>Service Area:</strong> Woodland Park, Divide, Colorado Springs, Pueblo, and surrounding areas.
-    </div>
-  </section>
-
-  <section>
-    <h2>Recent Projects</h2>
-    <p class="section-text">
-      Add photos of your patios, renovations, decks, and construction work here.
-    </p>
-    <div class="gallery">
-      <img src="IMG_4567.jpeg" alt="Construction project by DDR-33 Construction">
-      <img src="IMG_4576.jpeg" alt="Construction project by DDR-33 Construction">
-      <img src="IMG_4574.jpeg" alt="Construction project by DDR-33 Construction">
-      <img src="IMG_4573.jpeg" alt="Construction project by DDR-33 Construction">
-      <img src="IMG_4572.jpeg" alt="Construction project by DDR-33 Construction">
-      <img src="IMG_4571.jpeg" alt="Patio project by DDR-33 Construction">
-      <img src="IMG_4568.jpeg" alt="Renovation project by DDR-33 Construction">
-      <img src="IMG_4569.jpeg" alt="Renovation project by DDR-33 Construction">
-      <img src="IMG_4570.jpeg" alt="Renovation project by DDR-33 Construction">
-    </div>
-  </section>
-
-  <section>
-    <h2>Client Testimonials</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>“Excellent performance engineered, designed and completed 8 townhomes in Woodland Park.”</p>
-        <div class="testimonial-name">Jay Garvens</div>
-        <div>Colorado Springs, CO</div>
+        <div class="card">
+          <h3>Renovations & Home Upgrades</h3>
+          <p>
+            Transforming homes with practical improvements, attractive finishes, and long-lasting value you can see in every detail.
+          </p>
+        </div>
       </div>
-      <div class="testimonial">
-        <p>“Dwight has taken care of many commercial properties over 20+ years. Excellent work and stayed on budget. Very satisfied.”</p>
-        <div class="testimonial-name">Bob Garner</div>
-        <div>Colorado Springs, CO</div>
-      </div>
-      <div class="testimonial">
-        <p>“Built over 30 homes for me. Great performance as he took care of all parts of the construction.”</p>
-        <div class="testimonial-name">Cory Carpenter</div>
-        <div>Woodland Park, CO</div>
+
+      <div class="service-area">
+        <strong>Service Area:</strong> Woodland Park, Divide, Colorado Springs, Pueblo, and surrounding areas.
       </div>
     </div>
   </section>
 
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Recent Projects</span>
+        <h2>See the Quality of Our Work</h2>
+        <p class="section-text">
+          From patios and renovations to residential construction, DDR-33 Construction takes pride in delivering strong, attractive, and professionally finished results.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <img src="IMG_4567.jpeg" alt="Construction project by DDR-33 Construction">
+        <img src="IMG_4576.jpeg" alt="Construction project by DDR-33 Construction">
+        <img src="IMG_4574.jpeg" alt="Construction project by DDR-33 Construction">
+        <img src="IMG_4573.jpeg" alt="Construction project by DDR-33 Construction">
+        <img src="IMG_4572.jpeg" alt="Construction project by DDR-33 Construction">
+        <img src="IMG_4571.jpeg" alt="Patio project by DDR-33 Construction">
+        <img src="IMG_4568.jpeg" alt="Renovation project by DDR-33 Construction">
+        <img src="IMG_4569.jpeg" alt="Renovation project by DDR-33 Construction">
+        <img src="IMG_4570.jpeg" alt="Renovation project by DDR-33 Construction">
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Clients Say About DDR-33 Construction</h2>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>“Excellent performance engineered, designed and completed 8 townhomes in Woodland Park.”</p>
+          <div class="testimonial-name">Jay Garvens</div>
+          <div class="testimonial-location">Colorado Springs, CO</div>
+        </div>
+
+        <div class="testimonial">
+          <p>“Dwight has taken care of many commercial properties over 20+ years. Excellent work and stayed on budget. Very satisfied.”</p>
+          <div class="testimonial-name">Bob Garner</div>
+          <div class="testimonial-location">Colorado Springs, CO</div>
+        </div>
+
+        <div class="testimonial">
+          <p>“Built over 30 homes for me. Great performance as he took care of all parts of the construction.”</p>
+          <div class="testimonial-name">Cory Carpenter</div>
+          <div class="testimonial-location">Woodland Park, CO</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
-    <h2>Contact DDR-33 Construction</h2>
-    <div class="contact-box">
-      <p><strong>Phone:</strong> <a href="tel:17194925212">719-492-5212</a></p>
-      <p><strong>Email:</strong> <a href="mailto:ddrconstruction33@gmail.com">ddrconstruction33@gmail.com</a></p>
-      <p><strong>Headquarters:</strong> Woodland Park, CO</p>
-      <p><strong>Office Hours:</strong> Monday to Friday, 8:00 AM to 5:00 PM</p>
+    <div class="container">
+      <div class="cta-strip">
+        <h2>Ready to Start Your Next Project?</h2>
+        <p>
+          Contact DDR-33 Construction today for dependable service, experienced craftsmanship, and results that bring your vision to life.
+        </p>
+        <div class="hero-buttons" style="justify-content:center;">
+          <a class="btn btn-dark" href="tel:17194925212">Call Now</a>
+          <a class="btn btn-light" href="mailto:ddrconstruction33@gmail.com">Request Information</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Contact Us</span>
+        <h2>Contact DDR-33 Construction</h2>
+      </div>
+
+      <div class="contact-box">
+        <p><strong>Phone:</strong> <a href="tel:17194925212">719-492-5212</a></p>
+        <p><strong>Email:</strong> <a href="mailto:ddrconstruction33@gmail.com">ddrconstruction33@gmail.com</a></p>
+        <p><strong>Headquarters:</strong> Woodland Park, Colorado</p>
+        <p><strong>Office Hours:</strong> Monday to Friday, 8:00 AM to 5:00 PM</p>
+      </div>
     </div>
   </section>
 
